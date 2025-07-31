@@ -1,0 +1,28 @@
+{
+    "name": "snabbdom-vite-starter",
+    "version": "1.0.0",
+    "description": "A starter repo to use snabbdom & vite with opinionated linting and formatting",
+    "main": "index.js",
+    "scripts": {
+        "dev-tsc": "npx tsc --noEmit --watch",
+        "dev-vite": "npx vite",
+        "build": "npx tsc --noEmit && npx eslint . && npx vite build",
+        "preview": "npx vite preview"
+    },
+    "author": "Omkar Pai",
+    "license": "ISC",
+    "type": "module",
+    "dependencies": {
+        "snabbdom": "^3.6.2",
+        "vite": "^7.0.6"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.32.0",
+        "@stylistic/eslint-plugin": "^5.2.2",
+        "eslint": "^9.32.0",
+        "eslint-config-prettier": "^10.1.8",
+        "prettier": "^3.6.2",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.38.0"
+    }
+}
