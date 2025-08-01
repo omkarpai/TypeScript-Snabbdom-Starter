@@ -1,10 +1,10 @@
-# Snabbdom Template
+# TypeScript Snabbdom Starter
 
 ### Features
 
+- TypeScript
 - Snabbdom
 - Vite
-- TypeScript
 - SASS
 - Opinionated Linting with ESLint
 - Opinionated Formatting with Prettier
