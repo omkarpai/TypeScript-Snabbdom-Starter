@@ -2,11 +2,11 @@ import eslint from '@eslint/js';
 import { globalIgnores } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import eslintConfigPrettierFlat from 'eslint-config-prettier/flat';
 
 export default tseslint.config(
     [globalIgnores(['dist', 'node_modules'])],
-    eslintConfigPrettier,
+    eslintConfigPrettierFlat,
     eslint.configs.recommended,
     tseslint.configs.recommendedTypeChecked,
     tseslint.configs.stylisticTypeChecked,
@@ -15,14 +15,8 @@ export default tseslint.config(
         languageOptions: {
             parserOptions: {
                 projectService: {
-                    allowDefaultProject: [
-                        'eslint.config.js',
-                        'prettier.config.js',
-                        'vite.config.js',
-                    ],
+                    allowDefaultProject: ['eslint.config.ts', 'vite.config.ts'],
                 },
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                tsconfigRootDir: import.meta.dirname,
             },
         },
         rules: {
