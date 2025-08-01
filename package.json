@@ -1,7 +1,7 @@
 {
     "name": "snabbdom-vite-starter",
     "version": "1.0.0",
-    "description": "A starter repo to use snabbdom & vite with opinionated linting and formatting",
+    "description": "A starter repo to use Snabbdom, TypeScript, Vite & SASS with opinionated linting and formatting",
     "main": "index.js",
     "scripts": {
         "dev-tsc": "npx tsc --noEmit --watch",
